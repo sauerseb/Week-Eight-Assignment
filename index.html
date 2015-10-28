@@ -58,6 +58,10 @@ t = turtle.Turtle()
 # Prompt the User to Input the Number of Sides
 mySide = int(input("Enter a number, for the number of sides of a polygon, that is greater than 2 and less than 25: "))
 
+# While Loop to keep input in range
+while mySide < 3 or mySide > 25:
+    mySide = int(input("Enter a number, for the number of sides of a polygon, that is greater than 2 and less than 25: "))
+    
 # Equation
 print mySide
 myAngle = 180 - (((mySide-2)*180)/mySide)
